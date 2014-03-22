@@ -151,7 +151,7 @@ public:
   point end;
   vector < vector <point> > graph;
 
-	Maze(int size){
+  Maze(int size){
     int rows = size;
     int cols = size;
     graph.resize(rows);
@@ -162,7 +162,7 @@ public:
     generateMaze(rows, cols);
     start = findStart();
     end = findEnd();
-	}
+  }
 
 
   void printMaze(){
